@@ -1,2 +1,0 @@
-# datengya
-undangan digital riko
