@@ -1,113 +1,139 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #faf8f5;
+  color: #333;
+  overflow-x: hidden;
 }
 
-body {
-  background: #e6f2ff;
-  color: #333;
-  scroll-behavior: smooth;
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/gold-scale.png');
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://cdn.pixabay.com/photo/2020/06/08/09/13/mosque-5271704_1280.jpg') center/cover no-repeat;
   height: 100vh;
-  background: url('bg.jpg') center/cover no-repeat;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-}
-
-.hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 70, 150, 0.5);
-}
-
-.hero .content {
   position: relative;
   z-index: 2;
 }
 
-.hero h1 {
-  font-size: 3em;
-  letter-spacing: 2px;
+.bismillah {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #FFD700;
 }
 
-.hero p {
-  margin: 15px 0;
-  font-size: 1.1em;
+.couple-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  margin: 20px 0;
+  color: #f7e7a6;
 }
 
-button {
+.invitation-text {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+}
+
+.date, .place {
+  font-weight: 600;
+  color: #fff8dc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
   padding: 12px 25px;
-  border: none;
-  background: #008cff;
-  color: white;
+  background-color: #f7e7a6;
+  color: #333;
   border-radius: 25px;
-  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
   transition: 0.3s;
 }
-
-button:hover {
-  background: #005fcc;
+.btn:hover {
+  background-color: #ffd700;
+  color: #000;
 }
 
 .acara {
   text-align: center;
   padding: 60px 20px;
-  background: white;
+  background: #fff;
 }
 
 .acara h2 {
-  color: #005fcc;
-  margin-bottom: 30px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #c2a14b;
 }
 
-.details {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.details div {
-  background: #e6f2ff;
+.acara-card {
+  background: #faf3dc;
   border-radius: 15px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.map {
-  text-align: center;
-  padding: 60px 20px;
-  background: #f0f8ff;
-}
-
-.map iframe {
-  width: 90%;
-  height: 300px;
-  border: 0;
-  border-radius: 15px;
+  padding: 25px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .doa {
-  text-align: center;
+  background-color: #fefbf3;
   padding: 60px 20px;
-  background: white;
+  text-align: center;
+  font-style: italic;
+  color: #6b5023;
+}
+
+.quran {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 footer {
+  background-color: #f5deb3;
   text-align: center;
-  background: #005fcc;
-  color: white;
   padding: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.footer-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  margin: 5px 0;
+  color: #8b6b2b;
+}
+
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 50%;
+  background: #c2a14b;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+#music-btn:hover {
+  background: #e0b44d;
 }
