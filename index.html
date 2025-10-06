@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Undangan Pernikahan Drew & Sacha</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan Riko & Aisyah</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="opening-section">
-    <img src="gambar1-opening.png" alt="Drew & Sacha" class="background-image">
+  <audio id="music" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="hero">
     <div class="overlay"></div>
-    <div class="text-content">
-      <h4>Undangan Pernikahan</h4>
-      <h1>Drew & Sacha</h1>
-      <p>Congratulations on your special day!<br>
-      May your marriage be filled with love and happiness.</p>
-    </div>
-    <div class="nav-icons">
-      <img src="icon-opening.png" alt="Opening">
-      <img src="icon-mempelai.png" alt="Mempelai">
-      <img src="icon-acara.png" alt="Acara">
-      <img src="icon-doa.png" alt="Doa">
-      <img src="icon-ucapan.png" alt="Ucapan">
-      <img src="icon-maps.png" alt="Maps">
+    <div class="content">
+      <h1>Riko & Aisyah</h1>
+      <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan untukmu pasangan-pasangan dari jenismu sendiri...” <br> <span>(QS. Ar-Rum: 21)</span></p>
+      <button onclick="scrollToSection('acara')">Lihat Undangan</button>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <section id="acara" class="acara">
+    <h2>Akad & Resepsi</h2>
+    <div class="details">
+      <div>
+        <h3>Akad Nikah</h3>
+        <p>Jumat, 10 Januari 2025 <br> 09.00 WITA <br> Masjid Al-Khairaat, Siniu</p>
+      </div>
+      <div>
+        <h3>Resepsi</h3>
+        <p>Sabtu, 11 Januari 2025 <br> 19.00 WITA <br> Aula Pondok Al-Khairaat, Siniu</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="map">
+    <h2>Lokasi Acara</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="doa">
+    <h2>Doa & Harapan</h2>
+    <p>Semoga Allah SWT memberkahi pernikahan ini, menghimpun yang berserakan, 
+       memberkahi keduanya dalam kebaikan, dan menjadikan keduanya pasangan yang saling mencintai karena Allah.</p>
+  </section>
+
+  <footer>
+    <p>Dibuat dengan 💙 oleh <b>Riko Design</b></p>
+  </footer>
 </body>
 </html>
