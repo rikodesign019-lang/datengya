@@ -1,2 +1,11 @@
-// Placeholder - nanti bisa ditambahkan efek transisi atau musik
-console.log("Opening page loaded");
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+
+// Musik play otomatis setelah interaksi pertama (agar jalan di HP)
+document.addEventListener("click", () => {
+  const music = document.getElementById("music");
+  if (music.paused) {
+    music.play();
+  }
+});
